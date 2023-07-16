@@ -12,6 +12,7 @@ app.use(cors());
 
 //Using express json to receive request body in JSON
 app.use(express.json());
+app.use(express.static('public'));
 
 app.use('/videos', videosRouter);
 
